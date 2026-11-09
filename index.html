@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>Olist巴西电商数据分析报告</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 40px; background: #f9f9f9; color: #333; }
+  h1 { color: #1a5276; }
+  h2 { color: #2874a6; border-bottom: 2px solid #ddd; padding-bottom: 10px; }
+  table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+  th, td { border: 1px solid #ccc; padding: 10px; text-align: center; }
+  th { background: #eaeded; }
+  .highlight { background: #fef9e7; padding: 15px; border-left: 5px solid #f1c40f; margin: 20px 0; }
+  .figbox { text-align: center; margin: 20px 0; }
+  .figcap { color: #666; font-size: 0.9em; }
+  .footer { margin-top: 40px; text-align: center; color: #999; font-size: 0.8em; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Olist巴西电商数据分析报告</h1>
+  <p>基于Olist平台2016-2018年真实交易数据（约9.9万订单、9.3万用户、73品类）。</p>
+  
+  <h2>二、交易趋势分析</h2>
+  <p>25个月GMV从R$12.7万增至R$107.8万，由订单量单一驱动，客单价反降。</p>
+  <div class="figbox">
+    <img src="img_2_1_gmv.png">
+    <p class="figcap">图2-1　月度GMV与订单量双轴趋势图</p>
+  </div>
+
+  <h2>三、用户价值分层</h2>
+  <table>
+    <tr><th>用户分层</th><th>人数</th><th>占比</th><th>人均消费</th></tr>
+    <tr><td>高价值</td><td>2,425</td><td>2.60%</td><td>R$ 342</td></tr>
+    <tr><td>潜力</td><td>15,230</td><td>16.31%</td><td>R$ 185</td></tr>
+    <tr><td>需唤醒</td><td>22,112</td><td>23.68%</td><td>R$ 165</td></tr>
+    <tr><td>新客/活跃</td><td>17,845</td><td>19.11%</td><td>R$ 163</td></tr>
+    <tr><td>已流失</td><td>53,686</td><td>57.51%</td><td>R$ 158</td></tr>
+  </table>
+  <div class="figbox">
+    <img src="img_3_1_user.png">
+    <p class="figcap">图3-1　用户结构环形图 + 人均消费对比</p>
+  </div>
+  <p class="highlight"><b>核心结论：</b>仅2.6%的高价值客户贡献约54%的GMV。57.5%用户已流失，复购率仅3%。</p>
+
+  <h2>四、品类结构分析</h2>
+  <p>TOP5品类占GMV 39.8%，健康美容GMV第一，钟表礼品客单价最高。</p>
+  <div class="figbox">
+    <img src="img_4_1_category.png">
+    <p class="figcap">图4-1　TOP10品类GMV与每单均价</p>
+  </div>
+
+  <h2>五、利润漏洞诊断</h2>
+  <div class="figbox">
+    <img src="img_5_1_freight.png">
+    <p class="figcap">图5-1　重量分档件数与运费占比双轴图</p>
+  </div>
+  <p class="highlight"><b>核心发现：</b>轻小件运费占商品价比例高达19.7%，严重侵蚀利润。</p>
+
+  <h2>六、总结与建议</h2>
+  <table>
+    <tr><th>优先级</th><th>方向</th><th>具体动作</th></tr>
+    <tr><td>P0</td><td>用户留存</td><td>针对流失用户启动召回</td></tr>
+    <tr><td>P0</td><td>利润保护</td><td>轻小件设满额包邮或捆绑销售</td></tr>
+    <tr><td>P1</td><td>高价值维护</td><td>专属客服/会员权益</td></tr>
+  </table>
+  <div class="footer">Olist巴西电商数据分析项目 ｜ 数据来源：Kaggle</div>
+</div>
+</body>
+</html>
