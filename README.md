@@ -25,7 +25,3 @@
 使用 Power BI 搭建了交互式经营看板，包含月度 GMV 趋势、TOP10 品类排名、用户价值结构环形图及日期切片器。
 
 ![Olist Dashboard](dashboard/dashboard_preview.png)
-
-## 后续计划
-- [ ] 完善 Power BI 看板的交互逻辑与 DAX 度量值。
-- [ ] 开启第二个项目（淘宝 UserBehavior）并应用同期群分析。
